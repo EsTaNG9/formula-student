@@ -15,15 +15,3 @@ float read_temp(uint16_t adc_value) {
     float temp = 1.0 / ((1.0 / NTC_T0) + (1.0 / NTC_BETA) * log(r_ntc / NTC_R0));
     return temp - 273.15;  // Celsius
 }
-
-/*
-   3.3V
-     |
-   [Resistência de 10kΩ]
-     |
-     |---------> ADC pin
-     |
-   [NTC (GA10K3A1IA)]
-     |
-    GND
-*/
