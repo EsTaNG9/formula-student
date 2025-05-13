@@ -21,7 +21,7 @@ float read_temp(uint16_t adc_value) {
      |
    [Resistência de 10kΩ]
      |
-     |---------> ADC pin
+     |---------> ADC
      |
    [NTC (GA10K3A1IA)]
      |
